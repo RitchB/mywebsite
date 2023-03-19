@@ -11,6 +11,7 @@ import {
   InstagramIcon,
   LinkedInIcon,
   TwitterIcon,
+  YoutubeIcon,
 } from '@/components/SocialIcons'
 import logoAirbnb from '@/images/logos/airbnb.svg'
 import logoFacebook from '@/images/logos/facebook.svg'
@@ -24,6 +25,14 @@ import image5 from '@/images/photos/image-5.jpg'
 import { formatDate } from '@/lib/formatDate'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
+
+import ConvertkitForm1 from "../components/ConvertkitForm1";
+//import dynamic from 'next/dynamic';
+
+//const ConvertkitForm1 = dynamic(() => import('../components/ConvertkitForm1'), {
+//  ssr: false, // This line disables server-side rendering for the component
+//});
+import { Script } from "next/script";
 
 function MailIcon(props) {
   return (
@@ -195,9 +204,8 @@ function Resume() {
               <dt className="sr-only">Date</dt>
               <dd
                 className="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
-                aria-label={`${role.start.label ?? role.start} until ${
-                  role.end.label ?? role.end
-                }`}
+                aria-label={`${role.start.label ?? role.start} until ${role.end.label ?? role.end
+                  }`}
               >
                 <time dateTime={role.start.dateTime ?? role.start}>
                   {role.start.label ?? role.start}
@@ -246,53 +254,63 @@ function Photos() {
   )
 }
 
+{/*function ConvertkitForm1() { 
+  return (
+    <div className="mt-16 sm:mt-20">
+      <script async data-uid="9488faed4d" src="https://richard-beauregard.ck.page/9488faed4d/index.js"></script>
+    </div>
+  )
+}
+*/}
+
 export default function Home({ articles }) {
   return (
     <>
       <Head>
         <title>
-          Spencer Sharp - Software designer, founder, and amateur astronaut
+          Richard Beauregard - Everything's a process
         </title>
         <meta
           name="description"
-          content="I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms."
+          content="I’m Richard, a former actuarial consultant"
         />
       </Head>
       <Container className="mt-9">
         <div className="max-w-2xl">
-          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Software designer, founder, and amateur astronaut.
+          <h1 className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl">
+            Learn about risks, adopt a risk-management mindset, and make more informed decisions.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Spencer, a software designer and entrepreneur based in New York
-            City. I’m the founder and CEO of Planetaria, where we develop
-            technologies that empower regular people to explore space on their
-            own terms.
+            I'm Richard, a former actuarial consultant now building my own thing.
+            I'm sharing what I've learned in my 15 years of experience as an actuarial consultant,
+            so you can better understand risks and make better decisions.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
-              href="https://twitter.com"
+              href="https://twitter.com/IAmRitchB"
               aria-label="Follow on Twitter"
               icon={TwitterIcon}
             />
             <SocialLink
-              href="https://instagram.com"
+              href="https://www.instagram.com/iamritchb/"
               aria-label="Follow on Instagram"
               icon={InstagramIcon}
             />
             <SocialLink
-              href="https://github.com"
+              href="https://github.com/RitchB"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
             <SocialLink
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/richard-beauregard/"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
           </div>
         </div>
+        <div>div form<ConvertkitForm1 />div form</div>
       </Container>
+
       <Photos />
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">

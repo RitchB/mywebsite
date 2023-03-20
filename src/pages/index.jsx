@@ -27,12 +27,8 @@ import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
 
 import ConvertkitForm1 from "../components/ConvertkitForm1";
-//import dynamic from 'next/dynamic';
-
-//const ConvertkitForm1 = dynamic(() => import('../components/ConvertkitForm1'), {
-//  ssr: false, // This line disables server-side rendering for the component
-//});
-import { Script } from "next/script";
+//import { Script } from "next/script";
+import portraitImage from '@/images/logos/LogoEAP.jpg'
 
 function MailIcon(props) {
   return (
@@ -148,35 +144,35 @@ function Newsletter() {
 function Resume() {
   let resume = [
     {
-      company: 'Planetaria',
-      title: 'CEO',
+      company: 'Beausoft',
+      title: 'Founder',
       logo: logoPlanetaria,
-      start: '2019',
+      start: '2023',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear(),
       },
     },
     {
-      company: 'Airbnb',
-      title: 'Product Designer',
+      company: 'Manulife',
+      title: 'Senior Actuarial Consultant',
       logo: logoAirbnb,
-      start: '2014',
-      end: '2019',
+      start: '2020',
+      end: '2023',
     },
     {
-      company: 'Facebook',
-      title: 'iOS Software Engineer',
+      company: 'Ernst & Young',
+      title: 'Senior actuarial Advisor',
       logo: logoFacebook,
-      start: '2011',
-      end: '2014',
+      start: '2019',
+      end: '2020',
     },
     {
-      company: 'Starbucks',
-      title: 'Shift Supervisor',
+      company: 'Desjardins',
+      title: 'Actuarial Consultant',
       logo: logoStarbucks,
       start: '2008',
-      end: '2011',
+      end: '2019',
     },
   ]
 
@@ -219,10 +215,11 @@ function Resume() {
           </li>
         ))}
       </ol>
-      <Button href="#" variant="secondary" className="group mt-6 w-full">
+      {/*<Button href="#" variant="secondary" className="group mt-6 w-full">
         Download CV
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
+      */}
     </div>
   )
 }
@@ -254,15 +251,6 @@ function Photos() {
   )
 }
 
-{/*function ConvertkitForm1() { 
-  return (
-    <div className="mt-16 sm:mt-20">
-      <script async data-uid="9488faed4d" src="https://richard-beauregard.ck.page/9488faed4d/index.js"></script>
-    </div>
-  )
-}
-*/}
-
 export default function Home({ articles }) {
   return (
     <>
@@ -277,9 +265,12 @@ export default function Home({ articles }) {
       </Head>
       <Container className="mt-9">
         <div className="max-w-2xl">
-          <h1 className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl">
-            Learn about risks, adopt a risk-management mindset, and make more informed decisions.
+        <h1 className="text-3xl font-bold tracking-tight text-eap500 dark:text-eap500 sm:text-4xl">
+            Hi! I'm Richard
           </h1>
+          <h2 className="mt-2 text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl">
+            Learn about risks, adopt a risk-management mindset and enhance your decision-making abilities.
+          </h2>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             I'm Richard, a former actuarial consultant now building my own thing.
             I'm sharing what I've learned in my 15 years of experience as an actuarial consultant,
@@ -308,8 +299,26 @@ export default function Home({ articles }) {
             />
           </div>
         </div>
-        <div>div form<ConvertkitForm1 />div form</div>
       </Container>
+      {/*<Container>
+      <div className="max-w-xs px-2.5 lg:max-w-none">
+              <Image
+                src={portraitImage}
+                alt=""
+                width={150}
+                quality={100}
+                className=""
+              />
+              </div>
+      </Container>
+      */}
+      <Container className="mt-8">
+        <div className=" lg:pl-16 xl:pl-24">
+          <ConvertkitForm1 />
+        </div>
+      </Container>
+
+
 
       <Photos />
       <Container className="mt-24 md:mt-28">
@@ -320,8 +329,8 @@ export default function Home({ articles }) {
             ))}
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
-            <Newsletter />
-            <Resume />
+            {/*<Newsletter />*/}
+            {/*<Resume />*/}
           </div>
         </div>
       </Container>

@@ -4,6 +4,23 @@ module.exports = {
   darkMode: 'class',
   plugins: [require('@tailwindcss/typography')],
   theme: {
+    extend: {
+      colors: { 
+        youtube: '#FF0000', 
+        eap100: "#ffe7e0",
+        eap200: "#ffceb3",
+        eap300: "#ffb585",
+        eap400: "#ff9c58",
+        eap500: "#ff7f50",
+        eap600: "#e66745",
+        eap700: "#cc4f3a",
+        eap800: "#b3372f",
+        eap900: "#992024",
+      },
+      fontFamily: {
+        BebasNeue: "'Bebas Neue', cursive",
+      },
+    },
     fontSize: {
       xs: ['0.8125rem', { lineHeight: '1.5rem' }],
       sm: ['0.875rem', { lineHeight: '1.5rem' }],

@@ -61,22 +61,21 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl">
-              I’m Richard. I'm a former actuarial consultant now building my own thing.
+              I’m Richard. I'm a former actuarial consultant now creating content about risks, personal growth and mental health.
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
               Over the last 15 years, I've worked as an actuarial consultant for three significant international companies. 
-              My primary expertise is in data projection and software development. 
+              My primary expertise is in software development and data projection. 
               I have a degree in Actuarial Sciences from the University of Quebec in Montreal.
               </p>
               <p>
               In 2021, I developed anxiety problems, and in January 2022, my wife was diagnosed with breast cancer. 
-              I burned out. In March 2023, I quit my job as a Senior Actuarial Consultant and pursued other things.
+              I burned out. In March 2023, I quit my job as a Senior Actuarial Consultant and pursued other interests.
               </p>
               <p>
               I mainly worked with software from 2008 to 2019 before pursuing more traditional actuarial positions. 
-              I felt unhappy about what I was doing. I was missing the development environment I had worked for more than a decade. 
-              So I've decided to invest my time in learning to code so I can pursue a Software Engineering career.
+              I felt unhappy about what I was doing. I was missing the development environment I had worked in more than a decade. 
               </p>
               <p>
               Today, I spend time writing and developing content I share on social media. 
@@ -87,24 +86,24 @@ export default function About() {
           </div>
           <div className="lg:pl-20">
             <ul role="list">
-              <SocialLink href="#" icon={TwitterIcon}>
+              <SocialLink href="https://twitter.com/IAmRitchB" icon={TwitterIcon}>
                 Follow on Twitter
               </SocialLink>
-              <SocialLink href="#" icon={InstagramIcon} className="mt-4">
+              <SocialLink href="https://www.instagram.com/iamritchb/" icon={InstagramIcon} className="mt-4">
                 Follow on Instagram
               </SocialLink>
-              <SocialLink href="#" icon={GitHubIcon} className="mt-4">
+              <SocialLink href="https://github.com/RitchB" icon={GitHubIcon} className="mt-4">
                 Follow on GitHub
               </SocialLink>
-              <SocialLink href="#" icon={LinkedInIcon} className="mt-4">
+              <SocialLink href="https://www.linkedin.com/in/richard-beauregard/" icon={LinkedInIcon} className="mt-4">
                 Follow on LinkedIn
               </SocialLink>
               <SocialLink
-                href="mailto:spencer@planetaria.tech"
+                href="mailto:richard@richardbeauregard.me"
                 icon={MailIcon}
                 className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
               >
-                spencer@planetaria.tech
+                richard@richardbeauregard.me
               </SocialLink>
             </ul>
           </div>

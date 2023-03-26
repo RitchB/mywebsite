@@ -28,7 +28,7 @@ import { getAllArticles } from '@/lib/getAllArticles'
 
 import ConvertkitForm1 from "../components/ConvertkitForm1";
 //import { Script } from "next/script";
-import portraitImage from '@/images/logos/LogoEAP.jpg'
+import portraitImage from '@/images/photos/image-3.jpg'
 
 function MailIcon(props) {
   return (
@@ -256,20 +256,30 @@ export default function Home({ articles }) {
     <>
       <Head>
         <title>
-          Richard Beauregard - Everything's a process
+          richardbeauregard.me
         </title>
         <meta
           name="description"
           content="I’m Richard, a former actuarial consultant"
         />
+        <meta property="og:title" content="Richard Beauregard" />
+        <meta property="og:description" content="Richard Beauregard - Everything's a Process" />
+        <meta property="og:image" content={portraitImage} />
+        <meta property="og:url" content="https://www.richardbeauregard.me/" />
+        <meta property="og:type" content="website" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="@iamritchb" />
+        <meta name="twitter:description" content="richardbeauregard.me" />
+        <meta name="twitter:image" content={portraitImage} />
       </Head>
       <Container className="mt-9">
         <div className="max-w-2xl">
-        <h1 className="text-3xl font-bold tracking-tight text-eap500 dark:text-eap500 sm:text-4xl">
+          <h1 className="text-3xl font-bold tracking-tight text-eap500 dark:text-eap500 sm:text-4xl">
             Hi! I'm Richard
           </h1>
           <h2 className="mt-2 text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl">
-            Learn about risks, adopt a risk-management mindset and enhance your decision-making abilities.
+            Learn about risks, personal growth and mental health. Adopt a risk-management mindset and enhance your decision-making abilities.
           </h2>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             I'm Richard, a former actuarial consultant now building my own thing.

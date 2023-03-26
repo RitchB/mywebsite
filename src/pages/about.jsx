@@ -10,7 +10,7 @@ import {
   LinkedInIcon,
   TwitterIcon,
 } from '@/components/SocialIcons'
-import portraitImage from '@/images/portrait.jpg'
+import portraitImage from '@/images/photos/image-3.jpg'
 
 function SocialLink({ className, href, children, icon: Icon }) {
   return (
@@ -75,7 +75,7 @@ export default function About() {
               </p>
               <p>
               I mainly worked with software from 2008 to 2019 before pursuing more traditional actuarial positions. 
-              I felt unhappy about what I was doing. I was missing the development environment I had worked in more than a decade. 
+              I felt unhappy about what I was doing. I was missing the development environment I had worked for more than a decade. 
               </p>
               <p>
               Today, I spend time writing and developing content I share on social media. 

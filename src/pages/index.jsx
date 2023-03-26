@@ -264,14 +264,14 @@ export default function Home({ articles }) {
         />
         <meta property="og:title" content="Richard Beauregard" />
         <meta property="og:description" content="Richard Beauregard - Everything's a Process" />
-        <meta property="og:image" content={portraitImage} />
+        <meta property="og:image" content='@/images/photos/image-3.jpg' />
         <meta property="og:url" content="https://www.richardbeauregard.me/" />
         <meta property="og:type" content="website" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="@iamritchb" />
         <meta name="twitter:description" content="richardbeauregard.me" />
-        <meta name="twitter:image" content={portraitImage} />
+        <meta name="twitter:image" content='@/images/photos/image-3.jpg' />
       </Head>
       <Container className="mt-9">
         <div className="max-w-2xl">

@@ -60,8 +60,11 @@ export default function About() {
             </div>
           </div>
           <div className="lg:order-first lg:row-span-2">
-            <h1 className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl">
-              I’m Richard. I'm a former actuarial consultant now creating content about risks, personal growth and mental health.
+          <h1 className="text-3xl font-bold tracking-tight text-eap500 dark:text-eap500 sm:text-4xl">
+            Hi! I'm Richard
+          </h1>
+            <h1 className="text-xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">
+              Former Actuary & Business Software Expert. Self-development, Productivity, Rookie Software Developer, Future YouTuber, Wannabe Writer, Risks Knower, and Coffee Lover.
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
@@ -79,8 +82,8 @@ export default function About() {
               </p>
               <p>
               Today, I spend time writing and developing content I share on social media. 
-              I aim to build a community of like-minded people with whom I can share my knowledge about risks, 
-              personal growth and mental health while growing my developer skills.
+              I aim to build a community of like-minded people with whom I can share my knowledge about self-development, 
+              productivity and content creation while growing my software developer skills.
               </p>
             </div>
           </div>

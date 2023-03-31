@@ -272,20 +272,22 @@ export default function Home({ articles }) {
         <meta name="twitter:title" content="@iamritchb" />
         <meta name="twitter:description" content="richardbeauregard.me" />
         <meta name="twitter:image" content='@/images/photos/image-3.jpg' />
+
       </Head>
       <Container className="mt-9">
         <div className="max-w-2xl">
-          <h1 className="text-3xl font-bold tracking-tight text-eap500 dark:text-eap500 sm:text-4xl">
+          <h1 className="text-4xl font-bold tracking-tight text-eap500 dark:text-eap500 sm:text-5xl">
             Hi! I'm Richard
           </h1>
           <h2 className="mt-2 text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl">
-            Learn about risks, personal growth and mental health. Adopt a risk-management mindset and enhance your decision-making abilities.
+          I'm a former actuary and business software expert now creating content on Social media.
           </h2>
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+          {/*<p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             I'm Richard, a former actuarial consultant now building my own thing.
             I'm sharing what I've learned in my 15 years of experience as an actuarial consultant,
             so you can better understand risks and make better decisions.
           </p>
+          */}
           <div className="mt-6 flex gap-6">
             <SocialLink
               href="https://twitter.com/IAmRitchB"

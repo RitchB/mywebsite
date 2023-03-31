@@ -41,7 +41,7 @@ export default function Newsletter() {
             </Head>
             <SimpleLayout
                 title="Everything's a Process"
-                intro="Sing up for Everything's a Process - my weekly newsletter and receive my weekly emails where I share about risks, personal growth and mental health."
+                intro="Sing up for my newsletter called Everything's a Process and receive my weekly emails where I share about self-development, productivity and content creation."
             >
 
                 {/*  <div className="">
